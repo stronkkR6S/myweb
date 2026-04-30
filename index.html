@@ -5,7 +5,7 @@
     <title>RevCode</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+</head>
 <style>
     header {
         text-align: center;
@@ -13,13 +13,14 @@
     }
 
     nav {
-    margin-left: auto;
-    margin-right: 40px;
-    margin-top: -80px;
-    display: flex;
-    gap: 15px;
-    width: fit-content;
-}
+        margin-left: auto;
+        margin-right: 40px;
+        margin-top: -80px;
+        display: flex;
+        gap: 15px;
+        width: fit-content;
+    }
+
     nav a {
         color: white;
         text-decoration: none;
@@ -63,16 +64,33 @@
     }
 
     .Idle {
-    margin-left: auto;
-    margin-right: 90px;
-    display: flex;
-    gap: 15px;
-    width: fit-content;
+        position: absolute;
+        top: 170px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Idle img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+        .Idle {
+            position: static;
+            margin: 20px auto;
+        }
     }
 
     footer {
         text-align: center;
-        top: 89px;
+        top: 69px;
         width: 100%;
     }
 
@@ -132,13 +150,13 @@
                         https://wallhaven.cc/ </a></p>
             </div>
 
-                <div style="text-align: center;" class="Idle">
-                    <a target="_blank" style="color: #E6EDF3; text-decoration: none;"
-                        href="https://en.wikipedia.org/wiki/Ashoka">
-                        <img title="Ashoka Samrat" src="resources/ashoka.jpg" height="300" width="300">
-                        <p>Ashoka Samrat The Goat </p>
-                    </a>
-                </div>
+            <div style="text-align: center;" class="Idle">
+                <a target="_blank" style="color: #E6EDF3; text-decoration: none;"
+                    href="https://en.wikipedia.org/wiki/Ashoka">
+                    <img title="Ashoka Samrat" src="resources/ashoka.jpg">
+                    <p>Ashoka Samrat The Goat </p>
+                </a>
+            </div>
         </aside>
     </main>
 
