@@ -20,14 +20,15 @@
         gap: 15px;
         width: fit-content;
     }
+
     @media (max-width: 600px) {
-    nav {
-        position: static;
-        margin: 10px auto;
-        justify-content: center;
-        flex-wrap: wrap;
+        nav {
+            position: static;
+            margin: 10px auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
-}
 
     nav a {
         color: white;
@@ -88,6 +89,7 @@
         height: 300px;
         border-radius: 10px;
     }
+
     .Idle2 {
         position: absolute;
         top: 550px;
@@ -105,7 +107,8 @@
         height: 300px;
         border-radius: 10px;
     }
-    .Idle2 p{
+
+    .Idle2 p {
         position: absolute;
         margin-top: 310px;
     }
@@ -123,11 +126,27 @@
         }
     }
 
-footer {
-    text-align: center;
-    width: 100%;
-    margin-top: auto;
-}
+    @media (max-width: 600px) {
+        .FirstBox {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 600px) {
+
+            .SecondBox,
+            .ThirdBox {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+    }
+
     hr {
         background-color: grey;
     }
@@ -190,11 +209,11 @@ footer {
                     <img title="Ashoka Samrat" src="resources/ashoka.jpg">
                     <p>Ashoka Samrat The Goat </p>
                 </a>
-            </div >
+            </div>
 
             <div class="Idle2" style="text-align: center;">
-            <img title="Gautama Buddha" src="resources/gautam.jpg">
-            <p style="margin-bottom: 150px;">Gautama Buddha</p>
+                <img title="Gautama Buddha" src="resources/gautam.jpg">
+                <p style="margin-bottom: 150px;">Gautama Buddha</p>
             </div>
 
         </aside>
